@@ -1,0 +1,15 @@
+{
+    "plugins": ["webdriverio"],
+    "rules": {
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"],
+      "prefer-const": "error",
+      "no-unused-vars": "error" 
+    },
+      "parserOptions": {
+          "ecmaVersion": "latest"
+      },
+      "env": {
+          "es6": true
+      }
+  }
