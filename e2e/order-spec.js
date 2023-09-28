@@ -13,10 +13,9 @@ describe('Login application', () => {
       });
 
 
-    it('add the item to the cart', async () => {
+    it('add the item to the cart', () => {
       HomePage.addItemToCart(ItemsTitle.backpack);
       HomePage.verifyThatItemWasAdded();
-      await browser.pause(20000);
     });
 });
 

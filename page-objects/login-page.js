@@ -13,9 +13,9 @@ class LoginPage extends Navigation {
     get loginBtn (){ return $('#login-button');}
 
     loginIn (username, password) {
-         this.usernameInput.setValue(username);
-         this.passwordInput.setValue(password);
-         this.loginBtn.click();
+        this.usernameInput.setValue(username);
+        this.passwordInput.setValue(password);
+        this.loginBtn.click();
     }
 
     /**

@@ -16,14 +16,6 @@ reports/
 results.xml
 *Copy.csv
 results*.xml
-package-lock.json
-
-# Package Lock Json will be generated for each developer
-package-lock.json
-package.json
-
-# local wdio.conf.local.js for unit testing on local
-wdio.conf.js
 
 # Compiled Java class files
 *.class

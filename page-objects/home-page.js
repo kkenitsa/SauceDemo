@@ -12,7 +12,7 @@ class HomePage {
     get cartIcon() { return $('.shopping_cart_badge');}
 
     addItemToCart (value) {
-        this.inventoryItem.forEach(ele => {
+         this.inventoryItem.forEach(ele => {
             const item = ele.getText();
             if(item.includes(value)){
                 ele.findElement(By.Id('add-to-cart-sauce-labs-bike-light')).click();
@@ -21,10 +21,10 @@ class HomePage {
    };
 
    verifyThatItemWasAdded () {
-    this.cartIcon.getText().then((value) => {
+     this.cartIcon.getText().then((value) => {
         expect(value).toHaveValue(1);
     });
-    
+
     }
 };
 
