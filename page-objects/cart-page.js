@@ -1,16 +1,13 @@
 const { $ } = require('@wdio/globals');
-const Navigation = require('./navigation');
 
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class LoginPage extends Navigation {
+class LoginPage extends Cart {
     /**
      * define selectors using getter methods
      */
-    get usernameInput () {return $('#user-name');}
-    get passwordInput () {return $('#password');}
-    get loginBtn (){ return $('#login-button');}
+    get cartItem () {return $('#cart_item');}
 
     loginIn (username, password) {
          this.usernameInput.setValue(username);
